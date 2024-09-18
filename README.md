@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# Artworks Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application built with React and TypeScript using PrimeReact DataTable. This application allows users to explore artworks from the Art Institute of Chicago API with features like pagination, row selection, and persistence of selected rows across pages.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **PrimeReact DataTable**: Display artworks data in a clean and sortable table.
+- **Server-Side Pagination**: Fetch artworks data page by page from the API.
+- **Row Selection Persistence**: Selected rows are persisted even when navigating between pages.
+- **Checkbox Selection**: Select individual rows or all rows on the page with a custom selection panel.
+- **Responsive Design**: Built with responsiveness in mind for optimal viewing across devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite**: Fast React project bundler
+- **React (TypeScript)**: Front-end framework
+- **PrimeReact**: UI components for the table
+- **Axios**: HTTP client for fetching API data
+- **API**: Artworks data from [Art Institute of Chicago API](https://api.artic.edu/api/v1/artworks)
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![Artworks Table](./screenshots/artworks-table.png)
+*Screenshot of the Artworks Explorer in action*
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prerequisites
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Node.js** and **npm** installed
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/pushkarraj7/Artworks-Explorer.git
+
+
+
+### **Key Sections of the README**:
+1. **Project Description**: A clear and concise summary of the project and its features.
+2. **Technologies Used**: A list of the key technologies and libraries used in the project.
+3. **Getting Started**: Instructions to clone, install, and run the project locally.
+4. **Build & Deployment**: Instructions on how to build and deploy the project for production.
+5. **API Details**: Information about the API used for fetching artworks data.
+6. **Contribution and License**: For encouraging contributions and stating the project license.
+
+Feel free to customize the `README.md` based on your needs!
